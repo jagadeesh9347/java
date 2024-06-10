@@ -1,0 +1,25 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int num,temp,result=0,rem;
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        num=s.nextInt();
+        temp=num;
+        while(temp>0){
+            rem=temp%10;
+            result+=Math.pow(rem,3);
+            temp=temp/10;
+            
+        }
+        if(num==result){
+            System.out.println("amstrong number");
+        }
+        else{
+            System.out.println("not an amstrong number");
+        }
+    }
+}
